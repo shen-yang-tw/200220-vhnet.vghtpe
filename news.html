@@ -64,7 +64,7 @@
               <li hidden></li>
               <li>
                 <a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">最新動態</a>
-                <div class="bg_white_opacity-90 uk-overflow-auto" uk-dropdown="offset: 0">
+                <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header"><a class="hover:underline text-base" href="#">Itim</a></li>
                     <li class="mt-0 uk-nav-header"><a class="hover:underline text-base" href="#">Itim</a></li>
@@ -73,7 +73,7 @@
               </li>
               <li>
                 <a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">認識合作網</a>
-                <div class="bg_white_opacity-90 uk-overflow-auto" uk-dropdown="offset: 0">
+                <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header">
                       <a class="hover:underline text-base" href="#">Itim</a>
@@ -94,7 +94,7 @@
               </li>
               <li>
                 <a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">服務項目</a>
-                <div class="bg_white_opacity-90 uk-overflow-auto" uk-dropdown="offset: 0">
+                <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header">
                       <a class="hover:underline text-base" href="#">Itim</a>
@@ -246,112 +246,157 @@
   </header>
   <!-- header -->
 
-  <!-- slideshow - js control auto height -->
-  <div id="slideshow" uk-slideshow="autoplay: true; animation: fade; max-height: 300">
-    <!-- <div uk-slideshow="autoplay: true; animation: fade; min-height: 300; max-height: 500"> -->
-    <div class="uk-position-relative uk-visible-toggle uk-light">
-      <!-- <ul class="uk-slideshow-items"> -->
-      <ul class="uk-slideshow-items">
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner1.jpg" data-width alt="#" uk-cover uk-img="target: !ul > :last-child, !* +*"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center"> 守護健康 醫界典範</h2>
-          </div>
-        </li>
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner2.jpg" data-width alt="#" uk-cover uk-img="target: !* -*, !* +*"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center">正直誠信 創新卓越</h2>
-          </div>
-        </li>
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner3.jpg" data-width alt="#" uk-cover uk-img="target: !* -*, !ul > :first-child"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center">團隊合作 健康尊嚴</h2>
-          </div>
-        </li>
-      </ul>
-      <a class="l:px-5 uk-width-1-5 uk-position-left uk-flex uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous" aria-label="previous" title="前一張圖"><span class="sr-only">前一張圖</span></a>
-      <a class="l:px-5 uk-width-1-5 uk-position-right uk-flex uk-flex-right uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="next"><span class="sr-only">下一張圖</span></a>
-      <div class="uk-position-bottom-center uk-position-small">
-        <ul class="dotnav_large uk-dotnav">
-          <li uk-slideshow-item="0"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_blank', this, event)">Banner1</a>
-          </li>
-          <li uk-slideshow-item="1"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner2</a>
-          </li>
-          <li uk-slideshow-item="2"><a href="#" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner3</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- End slideshow - js control auto height -->
-
-  <section id="content" class="relative" uk-height-viewport="expand: true">
+  <section class="relative" uk-height-viewport="expand: true">
     <!-- <div class="bg_primary opacity10 uk-position-cover"></div> -->
-    <div class="margin_y_all_child-l container_responsive@s uk-container">
-      <!-- 此行不可加上uk-height-viewport，否則母標籤的uk-height-viewport會失去作用 -->
+    <div class="container_responsive@s uk-container uk-container-large">
+      <ul class="px-2 s:p-0 uk-breadcrumb">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">Link</a></li>
+        <li><span>Current</span></li>
+      </ul>
+      <!-- End uk-breadcrumb -->
       <div class="h-0 relative uk-visible@m"><a class="no-underline px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px; top:15px;">:::</a></div>
-      <div class="uk-grid uk-grid-small uk-grid-match uk-child-width-expand@m" uk-grid>
-        <div class="min_width-2/3!@m content-start uk-flex-last uk-flex-first@m" uk-margin>
-          <div class="overflow_hidden@m h-full uk-card uk-card-default uk-card-hover">
-            <h3 class="text-xl bg_primary color_black! px-2 py-1 m-0 uk-flex uk-flex-between uk-flex-middle uk-flex-right">
-              <span class="font-normal uk-width-expand">最新消息</span><a href="#" title="更多"><small>More</small></a></h3>
-            <div class="min_height-100@m max_height-250@m p-3">
-              <ul class="text-justify uk-list">
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/14</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院與醫隼智慧攜手 腦瘤放射手術結合人工智慧
-                        發表記者會</a></div>
-                  </div>
+      <div class="s:mb-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 200">
+        <div class="uk-grid-medium uk-grid" uk-grid>
+          <div class="uk-width-1-4@m uk-width-1-5@l">
+            <div class="max_height-200 max_height-700@m uk-overflow-auto">
+              <ul class="list_tabs uk-nav-default">
+                <li class="p-0 uk-nav-header hover:bg-gray-100">
+                  <a class="no-underline w-full break-all px-2 hover:bg-gray-200" href="#content">Level1</a>
                 </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/8</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">利奇馬颱風來襲，臺大醫院（包括總院、兒童醫院）8月9日（週五）開設颱風特別門診</a></div>
+                <li class="p-0 uk-nav-header hover:bg-gray-100 uk-parent">
+                  <div class="p-0 uk-grid uk-grid-collapse" uk-grid>
+                    <div class="uk-width-expand"><a class="no-underline w-full break-all px-2 hover:bg-gray-200" href="#">Level2</a></div>
+                    <div class="uk-width-auto"><a class="no-underline w-full break-all px-2 hover:bg-gray-200 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a></div>
                   </div>
+                  <ul class="toggle hidden uk-nav-sub p-0 bg-white">
+                    <li class="p-0"><a class="no-underline w-full break-all pl-4 px-2 hover:bg-gray-200" href="#">Item</a></li>
+                    <li class="p-0"><a class="no-underline w-full break-all pl-4 px-2 hover:bg-gray-200" href="#">Item</a></li>
+                  </ul>
                 </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/6</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院兒童醫院與兒童慈善協會攜手合作守護兒童聽力</a></div>
+                <li class="p-0 uk-nav-header hover:bg-gray-100 uk-parent uk-open">
+                  <div class="p-0 uk-grid uk-grid-collapse" uk-grid><!-- 主分類開啟中 /active加在此處/ -->
+                    <div class="uk-width-expand"><a class="no-underline w-full break-all px-2 hover:bg-gray-200" href="#">Level3</a></div>
+                    <div class="uk-width-auto"><a class="no-underline w-full break-all px-2 hover:bg-gray-200 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a></div>
                   </div>
-                </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/6</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院兒童醫院與兒童慈善協會攜手合作守護兒童聽力</a></div>
-                  </div>
+                  <ul class="toggle hidden uk-nav-sub p-0 bg-white">
+                    <li class="p-0"><!-- 子項目開啟中 /active加在此處/ -->
+                      <a class="no-underline w-full break-all pl-4 px-2 hover:bg-gray-200" href="#content">Title</a>
+                      <ul class="uk-nav-sub p-0">
+                        <li class="p-0 active"><!-- 子項目開啟中 /active加在此處/ -->
+                          <a class="no-underline w-full break-all pl-6 px-2 hover:bg-gray-200" href="#">Item</a>
+                        </li>
+                        <li class="p-0"><a class="no-underline w-full break-all pl-6 px-2 hover:bg-gray-200" href="#">Item</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="min_width-1/3!@s">
-          <div class="px-2 s:p-0 uk-grid uk-grid-small uk-grid-match uk-child-width-expand" uk-grid>
-            <div>
-              <a class="no-underline p-3 border border-solid border_primary color_primary h-full uk-flex uk-flex-middle uk-card uk-card-hover uk-card-body" href="#" title="館際合作">
-                <div class="text-2xl text-center w-full">
-                  <i class="far fa-hospital fa-3x"></i>
-                  <div>館際合作</div>
+          <div class="uk-width-expand@m">
+            <h2 class="btm_line text-2xl">最新消息<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
+            <div id="content" uk-margin>
+              <div class="uk-grid-small uk-grid" uk-grid>
+                <div class="uk-width-2-3@s uk-width-3-4@m">
+                  <input class="uk-input" type="text" placeholder="請輸入內容">
                 </div>
-              </a>
-            </div>
-            <div>
-              <a class="no-underline p-3 border border-solid border_primary color_primary h-full uk-flex uk-flex-middle uk-card uk-card-hover uk-card-body" href="#" title="教育訓練">
-                <div class="text-2xl text-center w-full">
-                  <i class="fas fa-chalkboard-teacher fa-3x"></i>
-                  <div>教育訓練</div>
+                <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
+                <div class="uk-width-1-1">
+                  <ul class="border2 border_primary-dark uk-tab" uk-tab>
+                    <li class="uk-active"><a href="#">Tab1</a></li>
+                    <li><a href="#">Tab2</a></li>
+                    <li><a href="#">Tab3</a></li>
+                  </ul>
+                  <ul class="uk-switcher" uk-margin>
+                    <li>
+                      <div class="pagination">
+                        <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
+                          <div>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
+                          </div>
+                          <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle" uk-margin>
+                            <select class="w-auto uk-select uk-form-small">
+                              <option selected>1</option>
+                              <option>2</option>
+                            </select>
+                            <span class="mx-1">/<span class="pl-1">20</span></span>
+                          </div>
+                          <div>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- pagination / select number -->
+                      <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
+                        <thead>
+                          <tr>
+                            <th class="uk-width-1-5@s">日期</th>
+                            <th class="uk-width-3-5@s">主題</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><time>2018-10-1</time></td>
+                            <td><i class="color_primary mr-1 fas fa-star"></i><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                          </tr>
+                          <tr>
+                            <td><time>2018-10-1</time></td>
+                            <td><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                          </tr>
+                          <tr>
+                            <td><time>2018-10-1</time></td>
+                            <td><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="pagination">
+                        <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
+                          <div>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
+                          </div>
+                          <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle" uk-margin>
+                            <select class="w-auto uk-select uk-form-small">
+                              <option selected>1</option>
+                              <option>2</option>
+                            </select>
+                            <span class="mx-1">/<span class="pl-1">20</span></span>
+                          </div>
+                          <div>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
+                            <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- pagination / select number -->
+                    </li>
+                    <li>Tab2</li>
+                    <li>Tab3</li>
+                  </ul>
                 </div>
-              </a>
+              </div>
+              <!-- Search bar & Table -->
             </div>
+            <!-- End #content -->
           </div>
         </div>
+        <!-- End uk-grid -->
       </div>
+      <!-- End uk-card -->
     </div>
   </section>
-  <!-- index main content -->
+  <!-- page main content -->
 
   <div id="footer" class="relative">
     <div class="p-3">
