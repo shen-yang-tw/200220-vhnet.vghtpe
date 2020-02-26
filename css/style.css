@@ -27,6 +27,33 @@ h6 {
   clip: auto;
 }
 
+header::after,
+#footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/bg_header.jpg) no-repeat center center;
+  background-size: cover;
+  transform: scaleX(-1);
+  opacity: 0.1;
+}
+
+#footer::before {
+  background: url(../img/bg_footer.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.sub_nav,
+.bg_primary > .uk-navbar,
+.nav_bar {
+  position: relative;
+  z-index: 1;
+}
+
 /* footer>.uk-visible\@m {
   display: block !important;
 }
@@ -156,6 +183,18 @@ div.editor.table {
 .editor table:not([border="0"]):not(.uk-table) th,
 .editor table:not([border="0"]):not(.uk-table) td {
   border: 1px solid black;
+}
+
+.editor table[border="0"] th,
+.editor table[border="0"] td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.editor table tbody tr:nth-of-type(odd), .editor table > tr:nth-of-type(odd) {
+  background: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /* .editor table td * {
@@ -390,7 +429,7 @@ div.editor.table {
 }
 
 .editor .h5 {
-  font-size: calc(18rem/18);
+  font-size: calc(16rem/18);
 }
 
 .editor .h6 {
@@ -411,17 +450,7 @@ div.editor.table {
 
 /**** Just replace the right logo ratio '1.96' or the background-position and the background-size ****/
 /*---------- Only landscape in mobile ------------------------------*/
-@media screen and (orientation: landscape) and (max-device-width: 959px) {
-  /* #slideshow {
-    display: none;
-  } */
-}
 /*---------- IE10+ ------------------------------*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  img {
-    width: 100%;
-  }
-}
 /* ----------- iPhone 4 and 4S ----------- */
 /* Portrait and Landscape */
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */

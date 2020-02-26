@@ -21,7 +21,7 @@ body * {
 }
 
 [class*=fa-]:not(.fa-layers-text):not(.font_default) {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
 }
 
 [class*=material-] {
@@ -9953,222 +9953,586 @@ a.hover\:bg_line\!:hover {
 
 .bg_white_opacity-10 {
   background-color: rgba(255, 255, 255, 0.1);
+  color: black;
 }
 .bg_white_opacity-15 {
   background-color: rgba(255, 255, 255, 0.15);
+  color: black;
 }
 .bg_white_opacity-20 {
   background-color: rgba(255, 255, 255, 0.2);
+  color: black;
 }
 .bg_white_opacity-25 {
   background-color: rgba(255, 255, 255, 0.25);
+  color: black;
 }
 .bg_white_opacity-30 {
   background-color: rgba(255, 255, 255, 0.3);
+  color: black;
 }
 .bg_white_opacity-35 {
   background-color: rgba(255, 255, 255, 0.35);
+  color: black;
 }
 .bg_white_opacity-40 {
   background-color: rgba(255, 255, 255, 0.4);
+  color: black;
 }
 .bg_white_opacity-45 {
   background-color: rgba(255, 255, 255, 0.45);
+  color: black;
 }
 .bg_white_opacity-50 {
   background-color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
 .bg_white_opacity-55 {
   background-color: rgba(255, 255, 255, 0.55);
+  color: black;
 }
 .bg_white_opacity-60 {
   background-color: rgba(255, 255, 255, 0.6);
+  color: black;
 }
 .bg_white_opacity-65 {
   background-color: rgba(255, 255, 255, 0.65);
+  color: black;
 }
 .bg_white_opacity-70 {
   background-color: rgba(255, 255, 255, 0.7);
+  color: black;
 }
 .bg_white_opacity-75 {
   background-color: rgba(255, 255, 255, 0.75);
+  color: black;
 }
 .bg_white_opacity-80 {
   background-color: rgba(255, 255, 255, 0.8);
+  color: black;
 }
 .bg_white_opacity-85 {
   background-color: rgba(255, 255, 255, 0.85);
+  color: black;
 }
 .bg_white_opacity-90 {
   background-color: rgba(255, 255, 255, 0.9);
+  color: black;
 }
 .bg_white_opacity-95 {
   background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+}
+
+a.bg_white_opacity-10:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+a.bg_white_opacity-15:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+}
+a.bg_white_opacity-20:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+a.bg_white_opacity-25:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: black;
+}
+a.bg_white_opacity-30:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+a.bg_white_opacity-35:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  color: black;
+}
+a.bg_white_opacity-40:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+a.bg_white_opacity-45:hover {
+  background-color: rgba(255, 255, 255, 0.55);
+  color: black;
+}
+a.bg_white_opacity-50:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+a.bg_white_opacity-55:hover {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: black;
+}
+a.bg_white_opacity-60:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+a.bg_white_opacity-65:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+}
+a.bg_white_opacity-70:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+a.bg_white_opacity-75:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+}
+a.bg_white_opacity-80:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+a.bg_white_opacity-85:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+}
+a.bg_white_opacity-90:hover {
+  background-color: white;
+  color: black;
+}
+a.bg_white_opacity-95:hover {
+  background-color: white;
+  color: black;
+}
+
+button.bg_white_opacity-10:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+button.bg_white_opacity-15:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+}
+button.bg_white_opacity-20:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+button.bg_white_opacity-25:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: black;
+}
+button.bg_white_opacity-30:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+button.bg_white_opacity-35:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  color: black;
+}
+button.bg_white_opacity-40:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+button.bg_white_opacity-45:hover {
+  background-color: rgba(255, 255, 255, 0.55);
+  color: black;
+}
+button.bg_white_opacity-50:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+button.bg_white_opacity-55:hover {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: black;
+}
+button.bg_white_opacity-60:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+button.bg_white_opacity-65:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+}
+button.bg_white_opacity-70:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+button.bg_white_opacity-75:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+}
+button.bg_white_opacity-80:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+button.bg_white_opacity-85:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+}
+button.bg_white_opacity-90:hover {
+  background-color: white;
+  color: black;
+}
+button.bg_white_opacity-95:hover {
+  background-color: white;
+  color: black;
 }
 
 .bg_black_opacity-10 {
   background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 .bg_black_opacity-15 {
   background-color: rgba(0, 0, 0, 0.15);
+  color: white;
 }
 .bg_black_opacity-20 {
   background-color: rgba(0, 0, 0, 0.2);
+  color: white;
 }
 .bg_black_opacity-25 {
   background-color: rgba(0, 0, 0, 0.25);
+  color: white;
 }
 .bg_black_opacity-30 {
   background-color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .bg_black_opacity-35 {
   background-color: rgba(0, 0, 0, 0.35);
+  color: white;
 }
 .bg_black_opacity-40 {
   background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 .bg_black_opacity-45 {
   background-color: rgba(0, 0, 0, 0.45);
+  color: white;
 }
 .bg_black_opacity-50 {
   background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 .bg_black_opacity-55 {
   background-color: rgba(0, 0, 0, 0.55);
+  color: white;
 }
 .bg_black_opacity-60 {
   background-color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 .bg_black_opacity-65 {
   background-color: rgba(0, 0, 0, 0.65);
+  color: white;
 }
 .bg_black_opacity-70 {
   background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 .bg_black_opacity-75 {
   background-color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 .bg_black_opacity-80 {
   background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 .bg_black_opacity-85 {
   background-color: rgba(0, 0, 0, 0.85);
+  color: white;
 }
 .bg_black_opacity-90 {
   background-color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 .bg_black_opacity-95 {
   background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+}
+
+a.bg_white_opacity-10:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+a.bg_white_opacity-15:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+a.bg_white_opacity-20:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+a.bg_white_opacity-25:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+}
+a.bg_white_opacity-30:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+a.bg_white_opacity-35:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+}
+a.bg_white_opacity-40:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+a.bg_white_opacity-45:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+}
+a.bg_white_opacity-50:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+a.bg_white_opacity-55:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+}
+a.bg_white_opacity-60:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+a.bg_white_opacity-65:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+a.bg_white_opacity-70:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+a.bg_white_opacity-75:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+a.bg_white_opacity-80:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+a.bg_white_opacity-85:hover {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+}
+a.bg_white_opacity-90:hover {
+  background-color: black;
+  color: white;
+}
+a.bg_white_opacity-95:hover {
+  background-color: black;
+  color: white;
+}
+
+button.bg_white_opacity-10:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+button.bg_white_opacity-15:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+button.bg_white_opacity-20:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+button.bg_white_opacity-25:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+}
+button.bg_white_opacity-30:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+button.bg_white_opacity-35:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+}
+button.bg_white_opacity-40:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+button.bg_white_opacity-45:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+}
+button.bg_white_opacity-50:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+button.bg_white_opacity-55:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+}
+button.bg_white_opacity-60:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+button.bg_white_opacity-65:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+button.bg_white_opacity-70:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+button.bg_white_opacity-75:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+button.bg_white_opacity-80:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+button.bg_white_opacity-85:hover {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+}
+button.bg_white_opacity-90:hover {
+  background-color: black;
+  color: white;
+}
+button.bg_white_opacity-95:hover {
+  background-color: black;
+  color: white;
 }
 
 .hover\:bg_white_opacity-10:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  color: black;
 }
 .hover\:bg_white_opacity-15:hover {
   background-color: rgba(255, 255, 255, 0.15);
+  color: black;
 }
 .hover\:bg_white_opacity-20:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  color: black;
 }
 .hover\:bg_white_opacity-25:hover {
   background-color: rgba(255, 255, 255, 0.25);
+  color: black;
 }
 .hover\:bg_white_opacity-30:hover {
   background-color: rgba(255, 255, 255, 0.3);
+  color: black;
 }
 .hover\:bg_white_opacity-35:hover {
   background-color: rgba(255, 255, 255, 0.35);
+  color: black;
 }
 .hover\:bg_white_opacity-40:hover {
   background-color: rgba(255, 255, 255, 0.4);
+  color: black;
 }
 .hover\:bg_white_opacity-45:hover {
   background-color: rgba(255, 255, 255, 0.45);
+  color: black;
 }
 .hover\:bg_white_opacity-50:hover {
   background-color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
 .hover\:bg_white_opacity-55:hover {
   background-color: rgba(255, 255, 255, 0.55);
+  color: black;
 }
 .hover\:bg_white_opacity-60:hover {
   background-color: rgba(255, 255, 255, 0.6);
+  color: black;
 }
 .hover\:bg_white_opacity-65:hover {
   background-color: rgba(255, 255, 255, 0.65);
+  color: black;
 }
 .hover\:bg_white_opacity-70:hover {
   background-color: rgba(255, 255, 255, 0.7);
+  color: black;
 }
 .hover\:bg_white_opacity-75:hover {
   background-color: rgba(255, 255, 255, 0.75);
+  color: black;
 }
 .hover\:bg_white_opacity-80:hover {
   background-color: rgba(255, 255, 255, 0.8);
+  color: black;
 }
 .hover\:bg_white_opacity-85:hover {
   background-color: rgba(255, 255, 255, 0.85);
+  color: black;
 }
 .hover\:bg_white_opacity-90:hover {
   background-color: rgba(255, 255, 255, 0.9);
+  color: black;
 }
 .hover\:bg_white_opacity-95:hover {
   background-color: rgba(255, 255, 255, 0.95);
+  color: black;
 }
 
 .hover\:bg_black_opacity-10:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 .hover\:bg_black_opacity-15:hover {
   background-color: rgba(0, 0, 0, 0.15);
+  color: white;
 }
 .hover\:bg_black_opacity-20:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  color: white;
 }
 .hover\:bg_black_opacity-25:hover {
   background-color: rgba(0, 0, 0, 0.25);
+  color: white;
 }
 .hover\:bg_black_opacity-30:hover {
   background-color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .hover\:bg_black_opacity-35:hover {
   background-color: rgba(0, 0, 0, 0.35);
+  color: white;
 }
 .hover\:bg_black_opacity-40:hover {
   background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 .hover\:bg_black_opacity-45:hover {
   background-color: rgba(0, 0, 0, 0.45);
+  color: white;
 }
 .hover\:bg_black_opacity-50:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 .hover\:bg_black_opacity-55:hover {
   background-color: rgba(0, 0, 0, 0.55);
+  color: white;
 }
 .hover\:bg_black_opacity-60:hover {
   background-color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 .hover\:bg_black_opacity-65:hover {
   background-color: rgba(0, 0, 0, 0.65);
+  color: white;
 }
 .hover\:bg_black_opacity-70:hover {
   background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 .hover\:bg_black_opacity-75:hover {
   background-color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 .hover\:bg_black_opacity-80:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 .hover\:bg_black_opacity-85:hover {
   background-color: rgba(0, 0, 0, 0.85);
+  color: white;
 }
 .hover\:bg_black_opacity-90:hover {
   background-color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 .hover\:bg_black_opacity-95:hover {
   background-color: rgba(0, 0, 0, 0.95);
+  color: white;
 }
 
 .bg_img_gradient {
@@ -11460,7 +11824,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   left: 0;
   padding: 0;
@@ -11474,7 +11838,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   left: 0;
   padding: 0;
@@ -77463,7 +77827,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
 }
 
@@ -77576,7 +77940,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   line-height: calc(18rem/16);
   text-align: center;
@@ -78501,6 +78865,15 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 
   input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     opacity: 1;
+  }
+
+  img:not([class*=inline-block]) {
+    width: 100%;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 960px), (-ms-high-contrast: active) and (min-width: 960px) {
+  .min_width-1\/3\!\@m {
+    min-width: calc(100%*1/3 - 1px) !important;
   }
 }
 
