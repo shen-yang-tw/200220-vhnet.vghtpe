@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="container_responsive@s uk-flex uk-visible@m uk-container uk-navbar" uk-navbar>
-          <div class="uk-navbar-center">
+          <div class="uk-navbar-center px-6">
             <ul class="nav_bar nav_bar-primary uk-tab uk-light">
               <li hidden></li>
               <li>
@@ -246,112 +246,91 @@
   </header>
   <!-- header -->
 
-  <!-- slideshow - js control auto height -->
-  <div id="slideshow" uk-slideshow="autoplay: true; animation: fade; max-height: 300">
-    <!-- <div uk-slideshow="autoplay: true; animation: fade; min-height: 300; max-height: 500"> -->
-    <div class="uk-position-relative uk-visible-toggle uk-light">
-      <!-- <ul class="uk-slideshow-items"> -->
-      <ul class="uk-slideshow-items">
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner1.jpg" data-width alt="#" uk-cover uk-img="target: !ul > :last-child, !* +*"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center"> 守護健康 醫界典範</h2>
-          </div>
-        </li>
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner2.jpg" data-width alt="#" uk-cover uk-img="target: !* -*, !* +*"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center">正直誠信 創新卓越</h2>
-          </div>
-        </li>
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner3.jpg" data-width alt="#" uk-cover uk-img="target: !* -*, !ul > :first-child"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center">團隊合作 健康尊嚴</h2>
-          </div>
-        </li>
-      </ul>
-      <a class="l:px-5 uk-width-1-5 uk-position-left uk-flex uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous" aria-label="previous" title="前一張圖"><span class="sr-only">前一張圖</span></a>
-      <a class="l:px-5 uk-width-1-5 uk-position-right uk-flex uk-flex-right uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="next"><span class="sr-only">下一張圖</span></a>
-      <div class="uk-position-bottom-center uk-position-small">
-        <ul class="dotnav_large uk-dotnav">
-          <li uk-slideshow-item="0"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_blank', this, event)">Banner1</a>
-          </li>
-          <li uk-slideshow-item="1"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner2</a>
-          </li>
-          <li uk-slideshow-item="2"><a href="#" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner3</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- End slideshow - js control auto height -->
-
-  <section id="content" class="relative" uk-height-viewport="expand: true">
+  <section class="relative" uk-height-viewport="expand: true">
     <!-- <div class="bg_primary opacity10 uk-position-cover"></div> -->
-    <div class="margin_y_all_child-l container_responsive@s uk-container">
-      <!-- 此行不可加上uk-height-viewport，否則母標籤的uk-height-viewport會失去作用 -->
+    <div class="container_responsive@s uk-container">
+      <ul class="px-2 s:p-0 uk-breadcrumb">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">Link</a></li>
+        <li><span>Current</span></li>
+      </ul>
+      <!-- End uk-breadcrumb -->
       <div class="h-0 relative uk-visible@m"><a class="no-underline px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px; top:15px;">:::</a></div>
-      <div class="uk-grid uk-grid-small uk-grid-match uk-child-width-expand@m" uk-grid>
-        <div class="min_width-2/3!@m content-start uk-flex-last uk-flex-first@m" uk-margin>
-          <div class="overflow_hidden@m h-full uk-card uk-card-default uk-card-hover">
-            <h3 class="text-xl bg_primary color_black! px-2 py-1 m-0 uk-flex uk-flex-between uk-flex-middle uk-flex-right">
-              <span class="font-normal uk-width-expand">最新消息</span><a href="#" title="更多"><small>More</small></a></h3>
-            <div class="min_height-100@m max_height-250@m p-3">
-              <ul class="text-justify uk-list">
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/14</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院與醫隼智慧攜手 腦瘤放射手術結合人工智慧
-                        發表記者會</a></div>
-                  </div>
-                </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/8</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">利奇馬颱風來襲，臺大醫院（包括總院、兒童醫院）8月9日（週五）開設颱風特別門診</a></div>
-                  </div>
-                </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/6</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院兒童醫院與兒童慈善協會攜手合作守護兒童聽力</a></div>
-                  </div>
-                </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/6</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院兒童醫院與兒童慈善協會攜手合作守護兒童聽力</a></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="min_width-1/3!@s">
-          <div class="px-2 s:p-0 uk-grid uk-grid-small uk-grid-match uk-child-width-expand" uk-grid>
-            <div>
-              <a class="no-underline p-3 border border-solid border_primary color_primary h-full uk-flex uk-flex-middle uk-card uk-card-hover uk-card-body" href="#" title="館際合作">
-                <div class="text-2xl text-center w-full">
-                  <i class="far fa-hospital fa-3x"></i>
-                  <div>館際合作</div>
+      <div class="s:mb-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 200">
+        <h2 class="btm_line text-2xl">帳號登入</h2>
+        <div id="content" uk-margin>
+          <form>
+            <div class="uk-grid-small uk-child-width-expand@s uk-grid" uk-grid>
+              <div class="min_width-1/2!@s min_width-1/3!@m">
+                <label class="w-full" for="#acc">單 位</label>
+                <select class="uk-select">
+                  <option>輔導會</option>
+                  <option>臺北榮總</option>
+                  <option>臺中榮總</option>
+                  <option>高雄榮總</option>
+                  <option>北榮桃園分院</option>
+                  <option>北榮新竹分院</option>
+                  <option>中榮埔里分院</option>
+                  <option>中榮嘉義分院</option>
+                  <option>高榮臺南分院</option>
+                  <option>高榮屏東分院</option>
+                  <option>北榮員山分院</option>
+                  <option>北榮蘇澳分院</option>
+                  <option>北榮鳳林分院</option>
+                  <option>北榮玉里分院</option>
+                  <option>關渡醫院</option>
+                </select>
+              </div>
+              <div class="min_width-1/2!@s min_width-1/3!@m">
+                <label class="w-full" for="#acc">帳 號</label>
+                <input id="acc" class="uk-input" type="email" placeholder="">
+                <p class="color_secondary mt-1 uk-text-small">驗證提示語</p>
+              </div>
+              <div class="min_width-1/2!@s min_width-1/3!@m">
+                <label class="w-full" for="#pas">密 碼</label>
+                <input id="pas" class="uk-input" type="password" placeholder="">
+                <p class="color_secondary mt-1 uk-text-small">驗證提示語</p>
+              </div>
+              <div class="min_width-1/2!@s mx-auto uk-width-1-2@m"><a href="#" class="btn_primary w-full uk-button uk-button-primary">登入</a></div>
+              <!-- <div class="min_width-1/2!@m">
+                <label class="w-full" for="#cap">驗證碼</label>
+                <input id="cap" class="uk-input" type="text" placeholder="">
+              </div>
+              <div class="min_width-1/2!@m">
+                <label class="uk-visible@s"></label>
+                <div class="flex items-center uk-grid-small">
+                  <div class="flex-initial"><img class="inline-block" data-src="http://fakeimg.pl/150x40/" width="150" height="40" alt="驗證碼" uk-img></div>
+                  <div class="flex-initial"><a href="#" title="重新換圖"><i class="fas fa-redo"></i></a></div>
                 </div>
-              </a>
-            </div>
-            <div>
-              <a class="no-underline p-3 border border-solid border_primary color_primary h-full uk-flex uk-flex-middle uk-card uk-card-hover uk-card-body" href="#" title="教育訓練">
-                <div class="text-2xl text-center w-full">
-                  <i class="fas fa-chalkboard-teacher fa-3x"></i>
-                  <div>教育訓練</div>
+              </div> -->
+              <!-- <div class="m:mt-8 uk-width-1-1">
+                <div class="uk-grid-small uk-child-width-expand uk-grid" uk-grid>
+                  <div class="min_width-1/2!@m">
+                    <a href="#" class="btn_primary w-full uk-button uk-button-primary">確定</a>
+                  </div>
+                  <div class="min_width-1/2!@m">
+                    <a href="#" class="w-full uk-button uk-button-default">取消</a>
+                  </div>
                 </div>
-              </a>
+              </div> -->
             </div>
-          </div>
+          </form>
+          <hr class="mt-6">
+          <h3 class="text-center">榮民醫院醫學數位化資源合作網電子資源使用須知</h3>
+          <p>本合作網提供之電子資源，因受限於合約的規定，僅供榮院同仁在Intranet (即院區內)使用， 敬請見諒!!若要於院區外使用，需先設定院外連線使用之proxy，請詳見院外proxy設定說明</p>
+          <ol class="list-decimal pl-6">
+            <li>電子資源之使用者帳號及密碼請輸入個人院內電子郵件使用者帳號與密碼。(例：wwwlib@isca.vghks.gov.tw  帳號：wwwlib  密碼：XXXXXX)院內電子郵件使用者帳號與密碼遺忘者，需親洽各院資訊室或圖書館。電子資源操作問題請洽各院圖書館服務人員。</li>
+            <li>請榮院之同仁連上電子期刊後，必須先詳閱出版社之使用規定及版權聲明，並限於個人學術研究或教學目的使用，不得有商業行為及連續大量有系統的下載檔案。如果違反智慧財產權，經查證屬實，您須自負相關法律責任，並停止您的使用權。</li>
+            <li>請勿用任何程式自動且大量抓取固定網站之資料，以免本合作網之任一單位被列為該站的ban list；若當我們接到來自國外網站的通告時，將會暫停服務違反規定的榮院之網域(IP)。</li>
+            <li>如何閱讀電子全文？<br>若全文格式為PDF檔，請先下載Adobe Acrobat Reader，如：<a class="no-underline bg_primary text-white px-2 my-1" href="#"><i class="fab fa-adobe pr-2"></i>Adobe Acrobat Reader</a><br>若全文格式為Realpage檔，請先下載 RealPage，如：<a class="no-underline bg_primary text-white px-2" href="#"><i class="fas fa-book-open pr-2 my-1"></i>RealPage</a></li>
+          </ol>
         </div>
+        <!-- End #content -->
       </div>
+      <!-- End uk-card -->
     </div>
   </section>
-  <!-- index main content -->
+  <!-- page main content -->
 
   <div id="footer" class="relative">
     <div class="p-3">

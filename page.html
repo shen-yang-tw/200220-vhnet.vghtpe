@@ -246,112 +246,284 @@
   </header>
   <!-- header -->
 
-  <!-- slideshow - js control auto height -->
-  <div id="slideshow" uk-slideshow="autoplay: true; animation: fade; max-height: 300">
-    <!-- <div uk-slideshow="autoplay: true; animation: fade; min-height: 300; max-height: 500"> -->
-    <div class="uk-position-relative uk-visible-toggle uk-light">
-      <!-- <ul class="uk-slideshow-items"> -->
-      <ul class="uk-slideshow-items">
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner1.jpg" data-width alt="#" uk-cover uk-img="target: !ul > :last-child, !* +*"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center"> 守護健康 醫界典範</h2>
-          </div>
-        </li>
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner2.jpg" data-width alt="#" uk-cover uk-img="target: !* -*, !* +*"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center">正直誠信 創新卓越</h2>
-          </div>
-        </li>
-        <li class="bg-black">
-          <a class="uk-position-cover" href="#" title="#"><img class="uk-cover" data-src="img/banner3.jpg" data-width alt="#" uk-cover uk-img="target: !* -*, !ul > :first-child"></a>
-          <div class="uk-position-small uk-position-bottom-right uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
-            <h2 class="font_size-10 bg_white_opacity-80 color_black! p-2 mb-5 m:mb-0 text-center">團隊合作 健康尊嚴</h2>
-          </div>
-        </li>
-      </ul>
-      <a class="l:px-5 uk-width-1-5 uk-position-left uk-flex uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous" aria-label="previous" title="前一張圖"><span class="sr-only">前一張圖</span></a>
-      <a class="l:px-5 uk-width-1-5 uk-position-right uk-flex uk-flex-right uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="next"><span class="sr-only">下一張圖</span></a>
-      <div class="uk-position-bottom-center uk-position-small">
-        <ul class="dotnav_large uk-dotnav">
-          <li uk-slideshow-item="0"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_blank', this, event)">Banner1</a>
-          </li>
-          <li uk-slideshow-item="1"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner2</a>
-          </li>
-          <li uk-slideshow-item="2"><a href="#" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner3</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- End slideshow - js control auto height -->
-
-  <section id="content" class="relative" uk-height-viewport="expand: true">
+  <section class="relative" uk-height-viewport="expand: true">
     <!-- <div class="bg_primary opacity10 uk-position-cover"></div> -->
-    <div class="margin_y_all_child-l container_responsive@s uk-container">
-      <!-- 此行不可加上uk-height-viewport，否則母標籤的uk-height-viewport會失去作用 -->
+    <div class="container_responsive@s uk-container uk-container-large">
+      <ul class="px-2 s:p-0 uk-breadcrumb">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">Link</a></li>
+        <li><span>Current</span></li>
+      </ul>
+      <!-- End uk-breadcrumb -->
       <div class="h-0 relative uk-visible@m"><a class="no-underline px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px; top:15px;">:::</a></div>
-      <div class="uk-grid uk-grid-small uk-grid-match uk-child-width-expand@m" uk-grid>
-        <div class="min_width-2/3!@m content-start uk-flex-last uk-flex-first@m" uk-margin>
-          <div class="overflow_hidden@m h-full uk-card uk-card-default uk-card-hover">
-            <h3 class="text-xl bg_primary color_black! px-2 py-1 m-0 uk-flex uk-flex-between uk-flex-middle uk-flex-right">
-              <span class="font-normal uk-width-expand">最新消息</span><a href="#" title="更多"><small>More</small></a></h3>
-            <div class="min_height-100@m max_height-250@m p-3">
-              <ul class="text-justify uk-list">
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/14</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院與醫隼智慧攜手 腦瘤放射手術結合人工智慧
-                        發表記者會</a></div>
-                  </div>
+      <div class="s:mb-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 200">
+        <div class="uk-grid-medium uk-grid" uk-grid>
+          <div class="uk-width-1-4@m uk-width-1-5@l">
+            <div class="max_height-200 max_height-700@m uk-overflow-auto">
+              <ul class="list_tabs uk-nav-default">
+                <li class="p-0 uk-nav-header hover:bg-gray-100">
+                  <a class="no-underline w-full break-all px-2 hover:bg-gray-200" href="#content">Level1</a>
                 </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/8</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">利奇馬颱風來襲，臺大醫院（包括總院、兒童醫院）8月9日（週五）開設颱風特別門診</a></div>
+                <li class="p-0 uk-nav-header hover:bg-gray-100 uk-parent">
+                  <div class="p-0 uk-grid uk-grid-collapse" uk-grid>
+                    <div class="uk-width-expand"><a class="no-underline w-full break-all px-2 hover:bg-gray-200" href="#">Level2</a></div>
+                    <div class="uk-width-auto"><a class="no-underline w-full break-all px-2 hover:bg-gray-200 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a></div>
                   </div>
+                  <ul class="toggle hidden uk-nav-sub p-0 bg-white">
+                    <li class="p-0"><a class="no-underline w-full break-all pl-4 px-2 hover:bg-gray-200" href="#">Item</a></li>
+                    <li class="p-0"><a class="no-underline w-full break-all pl-4 px-2 hover:bg-gray-200" href="#">Item</a></li>
+                  </ul>
                 </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/6</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院兒童醫院與兒童慈善協會攜手合作守護兒童聽力</a></div>
+                <li class="p-0 uk-nav-header hover:bg-gray-100 uk-parent uk-open">
+                  <div class="p-0 uk-grid uk-grid-collapse" uk-grid><!-- 主分類開啟中 /active加在此處/ -->
+                    <div class="uk-width-expand"><a class="no-underline w-full break-all px-2 hover:bg-gray-200" href="#">Level3</a></div>
+                    <div class="uk-width-auto"><a class="no-underline w-full break-all px-2 hover:bg-gray-200 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a></div>
                   </div>
-                </li>
-                <li>
-                  <div class="uk-grid uk-grid-collapse uk-child-width-expand" uk-grid>
-                    <div class="min_width-100 uk-width-auto"><i class="fas fa-angle-right fa-fw"></i><time class="text-sm mr-2">2019/8/6</time></div>
-                    <div class="uk-width-expand"><a class="inline uk-text-break" href="#">臺大醫院兒童醫院與兒童慈善協會攜手合作守護兒童聽力</a></div>
-                  </div>
+                  <ul class="toggle hidden uk-nav-sub p-0 bg-white">
+                    <li class="p-0"><!-- 子項目開啟中 /active加在此處/ -->
+                      <a class="no-underline w-full break-all pl-4 px-2 hover:bg-gray-200" href="#content">Title</a>
+                      <ul class="uk-nav-sub p-0">
+                        <li class="p-0 active"><!-- 子項目開啟中 /active加在此處/ -->
+                          <a class="no-underline w-full break-all pl-6 px-2 hover:bg-gray-200" href="#">Item</a>
+                        </li>
+                        <li class="p-0"><a class="no-underline w-full break-all pl-6 px-2 hover:bg-gray-200" href="#">Item</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="min_width-1/3!@s">
-          <div class="px-2 s:p-0 uk-grid uk-grid-small uk-grid-match uk-child-width-expand" uk-grid>
-            <div>
-              <a class="no-underline p-3 border border-solid border_primary color_primary h-full uk-flex uk-flex-middle uk-card uk-card-hover uk-card-body" href="#" title="館際合作">
-                <div class="text-2xl text-center w-full">
-                  <i class="far fa-hospital fa-3x"></i>
-                  <div>館際合作</div>
+          <div class="uk-width-expand@m">
+            <h2 class="btm_line text-2xl">標題<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
+            <div id="content" uk-margin>
+              <div class="editor table">
+                <ul>
+                  <li>
+                    L1
+                    <ul>
+                      <li>L2</li>
+                      <li>
+                        L2
+                        <ul>
+                          <li>L3 item</li>
+                          <li>L3 item</li>
+                          <li>
+                            <a><span>張制成節打去說行，書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ol>
+                  <li>
+                    L1
+                    <ol>
+                      <li>L2</li>
+                      <li>
+                        L2
+                        <ol>
+                          <li>L3 item</li>
+                          <li>L3 item</li>
+                          <li>L3 item</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+                <div class="bg-gray-300 uk-card uk-card-body">
+                  <h3>Primary</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-              </a>
-            </div>
-            <div>
-              <a class="no-underline p-3 border border-solid border_primary color_primary h-full uk-flex uk-flex-middle uk-card uk-card-hover uk-card-body" href="#" title="教育訓練">
-                <div class="text-2xl text-center w-full">
-                  <i class="fas fa-chalkboard-teacher fa-3x"></i>
-                  <div>教育訓練</div>
+                <h1>標題文字-h1</h1>
+                <h2>標題文字-h2</h2>
+                <h3>標題文字-h3</h3>
+                <p class="h3">標題文字-h3</p>
+                <h4>標題文字-h4</h4>
+                <p class="h4">標題文字-h4</p>
+                <h5>標題文字-h5</h5>
+                <p class="h5">標題文字-h5</p>
+                <h6>標題文字-h6</h6>
+                <p class="h6">標題文字-h6</p>
+                <p><a href="#">http://sample.com.tw</a>，書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不！
+                </p>
+                <div class="grid-container my-3">
+                  <div class="uk-child-width-expand@m uk-grid uk-grid-small" uk-margin uk-grid>
+                    <div>
+                      <div class="bg-gray-100 h-full uk-card uk-card-body">
+                        <p class="bg-gray-400 px-2 mb-2"><strong class="font-semibold text-black">掛號服務</strong></p>
+                        <ul>
+                          <li>網路掛號</li>
+                          <li>電話掛號</li>
+                          <li>現場掛號</li>
+                          <li>轉診掛號</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="bg-gray-100 h-full uk-card uk-card-body">
+                        <p class="bg-gray-400 px-2 mb-2"><strong class="font-semibold text-black">門診看診</strong class="font-semibold"></p>
+                        <ul>
+                          <li>門診時間表查詢</li>
+                          <li>看診進度查詢</li>
+                          <li>領藥進度查詢</li>
+                          <li>門診就醫須知</li>
+                          <li>門診檢查說明書</li>
+                          <li>連續處方箋預約領藥</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="bg-gray-100 h-full uk-card uk-card-body">
+                        <div class="h-full uk-flex uk-flex-middle uk-flex-center">
+                          <a href="https://www.ntuh.gov.tw/ntuh/Fpage.action?muid=70&amp;fid=2972">該看哪一科?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </a>
+                <table border="0" cellpadding="0" cellspacing="0" width="784">
+                  <thead>
+                    <tr height="22">
+                      <th headers="_180" height="22" style="text-align: left; width: 20%;">Hours</th>
+                      <th id="_180" style="text-align: left;" width="64">Monday</th>
+                      <th headers="_55" style="text-align: left;" width="64">Tuesday</th>
+                      <th style="text-align: left;" width="64">Wednesday</th>
+                      <th style="text-align: left;" width="64">Thursday</th>
+                      <th style="text-align: left;" width="64">Friday</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr height="22">
+                      <td headers="_57" height="22" width="64"><span class="heading">Heading1</span>Morning 9:00-12:00
+                      </td>
+                      <td headers="_58" width="64"><span class="heading">Heading2</span>X</td>
+                      <td headers="_59" width="64"><span class="heading">Heading3</span>X</td>
+                      <td id="_60" width="64"><span class="heading">Heading4</span>X</td>
+                      <td headers="_61" width="64"><span class="heading">Heading5</span>X</td>
+                      <td headers="_62" width="64"><span class="heading">Heading6</span>X</td>
+                    </tr>
+                    <tr height="22">
+                      <td headers="_63" height="22" width="64"><span class="heading">Heading1</span>Afternoon 1:30-4:30
+                      </td>
+                      <td headers="_64" width="64"><span class="heading">Heading2</span>X</td>
+                      <td headers="_65" width="64"><span class="heading">Heading3</span>X</td>
+                      <td headers="_66" width="64"><span class="heading">Heading4</span>X</td>
+                      <td headers="_67" width="64"><span class="heading">Heading5</span>X</td>
+                      <td headers="_68" width="64"><span class="heading">Heading6</span>X</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table border="1" cellpadding="0" cellspacing="0" width="784">
+                  <thead>
+                    <tr height="22">
+                      <th headers="_180" height="22" style="text-align: left; width: 20%;">Hours</th>
+                      <th id="_180" style="text-align: left;" width="64">Monday</th>
+                      <th headers="_55" style="text-align: left;" width="64">Tuesday</th>
+                      <th style="text-align: left;" width="64">Wednesday</th>
+                      <th style="text-align: left;" width="64">Thursday</th>
+                      <th style="text-align: left;" width="64">Friday</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr height="22">
+                      <td headers="_57" height="22" width="64"><span class="heading">Heading1</span>Morning 9:00-12:00
+                      </td>
+                      <td headers="_58" width="64"><span class="heading">Heading2</span>X</td>
+                      <td headers="_59" width="64"><span class="heading">Heading3</span>X</td>
+                      <td id="_60" width="64"><span class="heading">Heading4</span>X</td>
+                      <td headers="_61" width="64"><span class="heading">Heading5</span>X</td>
+                      <td headers="_62" width="64"><span class="heading">Heading6</span>X</td>
+                    </tr>
+                    <tr height="22">
+                      <td headers="_63" height="22" width="64"><span class="heading">Heading1</span>Afternoon 1:30-4:30
+                      </td>
+                      <td headers="_64" width="64"><span class="heading">Heading2</span>X</td>
+                      <td headers="_65" width="64"><span class="heading">Heading3</span>X</td>
+                      <td headers="_66" width="64"><span class="heading">Heading4</span>X</td>
+                      <td headers="_67" width="64"><span class="heading">Heading5</span>X</td>
+                      <td headers="_68" width="64"><span class="heading">Heading6</span>X</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table border="1" width="50%">
+                  <caption>Table-有外框無間距 width="50%，在手機版自動寬度100%"</caption>
+                  <thead>
+                    <tr>
+                      <th style="color: red; font-weight: bolder; font-family: '細明體';">欄位1</th>
+                      <th>欄位2</th>
+                      <th>欄位3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="color: blue; font-weight: bolder; font-family: '細明體'; font-size: 24px;">細明體</td>
+                      <td>預設黑體文字</td>
+                      <td>Table Footer</td>
+                    </tr>
+                    <tr>
+                      <td>Table Data</td>
+                      <td>Table Data</td>
+                      <td>Table Data</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table border="0" cellspacing="20">
+                  <caption>Table-無外框有間距20</caption>
+                  <thead>
+                    <tr>
+                      <th>Table Heading</th>
+                      <th>Table Heading</th>
+                      <th>Table Heading</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Table Footer</td>
+                      <td>Table Footer</td>
+                      <td>Table Footer</td>
+                    </tr>
+                    <tr>
+                      <td>Table Data</td>
+                      <td>Table Data</td>
+                      <td>Table Data</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table border="1" cellspacing="10" style="width: 80%;">
+                  <caption>Table-有外框有間距10</caption>
+                  <thead>
+                    <tr>
+                      <th>Table Heading</th>
+                      <th>Table Heading</th>
+                      <th>Table Heading</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Table Footer</td>
+                      <td>Table Footer</td>
+                      <td>Table Footer</td>
+                    </tr>
+                    <tr>
+                      <td>Table Data</td>
+                      <td>Table Data</td>
+                      <td>Table Data</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
+            <!-- End #content -->
           </div>
         </div>
+        <!-- End uk-grid -->
       </div>
+      <!-- End uk-card -->
     </div>
   </section>
-  <!-- index main content -->
+  <!-- page main content -->
 
   <div id="footer" class="relative">
     <div class="p-3">

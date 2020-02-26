@@ -18,10 +18,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="top" class="uk-background-cover uk-background-top-center uk-position-relative" uk-height-viewport>
+<body id="top">
   <div class="uk-position-top-left"><a href="#content" id="gotocenter" title="跳到主要內容" class="sr-only sr-only-focusable">跳到主要內容</a></div>
-  <header class="shadow">
-    <nav class="bg_primary py-1 text-center relative" uk-margin>
+  <header class="shadow relative">
+    <nav class="bg_primary py-1 text-center relative uk-visible@m" uk-margin>
       <div class="sub_nav margin_x_child text-sm h-full uk-flex uk-flex-center uk-flex-middle" uk-margin>
         <span class="uk-visible@m"><a class="px-2" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="padding-bottom: 3px;">:::</a></span>
         <span><a class="px-2" href="#">回首頁</a></span>
@@ -35,15 +35,13 @@
     <div class="shadow" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
       <nav class="bg-gray-100 shadow-none">
         <div class="bg_primary">
-          <div class="logo_control px-2 m:px-4 uk-container uk-navbar" uk-navbar>
-            <div class="logo_text_control flex-grow uk-navbar-left">
-              <div class="logo_position">
-                <h1>
-                  <a class="logo flex uk-position-cover" href="index.html" title="榮民醫院醫學資源數位化合作網">
-                    <img data-src="img/logo-white.png" width="910" height="72" alt="榮民醫院醫學資源數位化合作網" uk-img>
-                  </a>
-                </h1>
-              </div>
+          <div class="px-2 m:px-4 py-1 uk-container uk-navbar" uk-navbar>
+            <div class="uk-width-4-5 uk-width-2-3@s uk-width-1-2@m uk-navbar-left">
+              <h1 class="w-full uk-flex uk-flex-middle">
+                <a class="logo" href="index.html" title="榮民醫院醫學資源數位化合作網">
+                  <img data-src="img/logo-white.png" width="910" height="72" alt="榮民醫院醫學資源數位化合作網" uk-img>
+                </a>
+              </h1>
             </div>
             <div class="uk-visible@m uk-navbar-right">
               <div class="sub_nav margin_x_child h-full uk-flex uk-flex-middle" uk-margin>
@@ -65,7 +63,7 @@
             <ul class="nav_bar nav_bar-primary uk-tab uk-light">
               <li hidden></li>
               <li>
-                <a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">訊息專區</a>
+                <a class="text-base font-bold color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">最新動態</a>
                 <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header"><a class="hover:underline text-base" href="#">Itim</a></li>
@@ -74,7 +72,7 @@
                 </div>
               </li>
               <li>
-                <a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">認識台大</a>
+                <a class="text-base font-bold color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">認識合作網</a>
                 <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header">
@@ -95,7 +93,7 @@
                 </div>
               </li>
               <li>
-                <a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">就醫指南</a>
+                <a class="text-base font-bold color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">服務項目</a>
                 <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header">
@@ -139,10 +137,7 @@
                   </ul>
                 </div>
               </li>
-              <li><a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">醫療團隊</a></li>
-              <li><a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">特色醫療</a></li>
-              <li><a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">為民服務</a></li>
-              <li><a class="text-base color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">教學研究</a></li>
+              <li><a class="text-base font-bold color_primary!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">電子資源</a></li>
             </ul>
           </div>
         </div>
@@ -154,7 +149,7 @@
         <ul class="uk-nav uk-nav-default text-white">
           <li class="py-1 uk-parent">
             <div class="flex">
-              <a class="flex-1 flex items-center" href="#">訊息專區</a>
+              <a class="flex-1 flex items-center" href="#">最新動態</a>
               <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a>
             </div>
             <ul class="toggle hidden uk-nav-sub">
@@ -164,7 +159,7 @@
           </li>
           <li class="py-1 uk-parent">
             <div class="flex">
-              <a class="flex-1 flex items-center" href="#">認識台大</a>
+              <a class="flex-1 flex items-center" href="#">認識合作網</a>
               <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a>
             </div>
             <ul class="toggle hidden uk-nav-sub">
@@ -186,7 +181,7 @@
           </li>
           <li class="py-1 uk-parent">
             <div class="flex">
-              <a class="flex-1 flex items-center" href="#">就醫指南</a>
+              <a class="flex-1 flex items-center" href="#">服務項目</a>
               <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a>
             </div>
             <ul class="toggle hidden uk-nav-sub">
@@ -232,37 +227,7 @@
           </li>
           <li class="py-1 uk-parent">
             <div class="flex">
-              <a class="flex-1 flex items-center" href="#">醫療團隊</a>
-              <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a>
-            </div>
-            <ul class="toggle hidden uk-nav-sub">
-              <li><a class="mx-2" href="#">Item</a></li>
-              <li><a class="mx-2" href="#">Item</a></li>
-            </ul>
-          </li>
-          <li class="py-1 uk-parent">
-            <div class="flex">
-              <a class="flex-1 flex items-center" href="#">特色醫療</a>
-              <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a>
-            </div>
-            <ul class="toggle hidden uk-nav-sub">
-              <li><a class="mx-2" href="#">Item</a></li>
-              <li><a class="mx-2" href="#">Item</a></li>
-            </ul>
-          </li>
-          <li class="py-1 uk-parent">
-            <div class="flex">
-              <a class="flex-1 flex items-center" href="#">為民服務</a>
-              <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a>
-            </div>
-            <ul class="toggle hidden uk-nav-sub">
-              <li><a class="mx-2" href="#">Item</a></li>
-              <li><a class="mx-2" href="#">Item</a></li>
-            </ul>
-          </li>
-          <li class="py-1 uk-parent">
-            <div class="flex">
-              <a class="flex-1 flex items-center" href="#">教學研究</a>
+              <a class="flex-1 flex items-center" href="#">電子資源</a>
               <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span></a>
             </div>
             <ul class="toggle hidden uk-nav-sub">
@@ -271,10 +236,9 @@
             </ul>
           </li>
           <li class="uk-nav-divider"></li>
-          <li><a href="#">門診時間</a></li>
-          <li><a href="#">站內檢索</a></li>
-          <li><a href="#">人才招募</a></li>
-          <li><a href="#">English</a></li>
+          <li><a href="#">回首頁</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">聯絡我們</a></li>
         </ul>
       </div>
     </div>
@@ -455,12 +419,12 @@
     </div>
   </div>
   <!-- footer -->
+
   <a id="gototop" class="color_white bg_black_opacity-50 hover:bg_black_opacity-70 opacity-0 no-underline p-2 rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" uk-scroll uk-totop><span hidden>回到最上</span></a>
 
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
-<script src="js/uikit.min.js"></script>
-<script src="js/uikit-icons.min.js"></script>
-<script src="js/script.js"></script>
 
 </html>
