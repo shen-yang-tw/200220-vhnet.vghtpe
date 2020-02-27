@@ -448,6 +448,11 @@ div.editor.table {
   display: inline-block;
 }
 
+@media (min-width: 960px) {
+  header > nav .sub_nav {
+    justify-content: flex-end;
+  }
+}
 /**** Just replace the right logo ratio '1.96' or the background-position and the background-size ****/
 /*---------- Only landscape in mobile ------------------------------*/
 /*---------- IE10+ ------------------------------*/
