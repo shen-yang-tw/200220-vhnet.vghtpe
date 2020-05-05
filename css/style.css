@@ -448,6 +448,10 @@ div.editor.table {
   display: inline-block;
 }
 
+h2.btm_line {
+  border-color: grey;
+}
+
 @media (min-width: 960px) {
   header > nav .sub_nav {
     justify-content: flex-end;
